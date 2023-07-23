@@ -21,7 +21,10 @@
 		
 	<%
 		//轉發請求到其他jsp頁面
-		request.getRequestDispatcher("/scope2.jsp").forward(request, response);
+		// request.getRequestDispatcher("/scope2.jsp").forward(request, response);
+		// 等同於JSP動態標籤的jsp:forward
 	%>
+	
+	<jsp:forward page="/scope2.jsp"></jsp:forward>
 </body>
 </html>
